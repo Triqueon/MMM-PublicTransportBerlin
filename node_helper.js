@@ -1,6 +1,6 @@
 "use strict";
 const NodeHelper = require('node_helper');
-const SaarvvFetcher = require('./SaarvvFetcher');
+const SaarvvFetcher = require('./SaarVVFetcher');
 
 module.exports = NodeHelper.create({
 
