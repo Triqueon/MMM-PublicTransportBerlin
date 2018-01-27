@@ -1,11 +1,11 @@
-# MMM-PublicTransportBerlin
+# MMM-PublicTransportSaarVV
 
-MMM-PublicTransportBerlin is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror) project by 
+MMM-PublicTransportSaarVV is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror) project by 
 [Michael Teeuw](https://github.com/MichMich).
 
-It shows live public transport information for Berlin and Brandenburg based on [VBB-Hafas](http://www.hafas.de/company/referenzen/vbb) data.
-Since it uses VBB data, the whole transport network is covered. So public transport in Brandenburg will work as well. 
-MMM-PublicTransportBerlin uses the [vbb-hafas](https://github.com/derhuerst/vbb-hafas) REST API by [derhuerst](https://github.com/derhuerst).
+It shows live public transport information for the Saarland based on [Hafas](http://www.hafas.de/) data.
+Since it uses SaarVV data, the whole transport network is covered.
+MMM-PublicTransportSaarVV uses the [hafas-client](https://github.com/derhuerst/hafas-client) REST API by [derhuerst](https://github.com/derhuerst).
 
 *Notes:* 
 * *The module is working fine. But I think some value combinations could still lead to strange behaviour. I'd appreciate any error report.*
@@ -30,8 +30,8 @@ The module looks like this:
 Just clone the module into your MagicMirror modules folder and execute `npm install` in the module's directory:
 
 ```
-git clone https://github.com/deg0nz/MMM-PublicTransportBerlin.git
-cd MMM-PublicTransportBerlin
+git clone https://github.com/triqueon/MMM-PublicTransportSaarVV.git
+cd MMM-PublicTransportSaarVV
 npm install
 ```
 
@@ -88,7 +88,7 @@ Here is an example of an entry in `config.js`:
 
 ``` JavaScript
 {
-    module: 'MMM-PublicTransportBerlin',
+    module: 'MMM-PublicTransportSaarVV',
     position: 'top_right',
     config: {
         name: "Alexanderplatz",
@@ -121,6 +121,7 @@ Multiple instances of this module are possible. Just add another entry of the MM
 
 ## Special Thanks
 
+* [deg0nz](https://github.com/deg0nz) for creating the [MMM-PublicTransportBerlin](https://github.com/deg0nz/MMM-PublicTransportBerlin) module, on which this one is based
 * [Michael Teeuw](https://github.com/MichMich) for inspiring me and many others to build a MagicMirror.
 * [Jannis Redmann](https://github.com/derhuerst) for creating the [vbb-hafas](https://github.com/derhuerst/vbb-hafas) REST API. 
 You made my life a lot easier with this!
@@ -128,4 +129,4 @@ You made my life a lot easier with this!
 
 ## Issues
 
-If you find any problems, bugs or have questions, please [open a GitHub issue](https://github.com/deg0nz/MMM-PublicTransportBerlin/issues) in this repository.
+If you find any problems, bugs or have questions, please [open a GitHub issue](https://github.com/deg0nz/MMM-PublicTransportSaarVV/issues) in this repository.
