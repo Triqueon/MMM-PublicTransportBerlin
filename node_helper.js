@@ -1,6 +1,6 @@
 "use strict";
 const NodeHelper = require('node_helper');
-const VbbFetcher = require('./VbbFetcher');
+const SaarvvFetcher = require('./SaarvvFetcher');
 
 module.exports = NodeHelper.create({
 
@@ -13,7 +13,7 @@ module.exports = NodeHelper.create({
 
         if (typeof this.departuresFetchers[config.stationId] === "undefined") {
 
-            fetcher = new VbbFetcher(config);
+            fetcher = new SaarvvFetcher(config);
             this.departuresFetchers[config.stationId] = fetcher;
             this.sendInit(fetcher);
 
