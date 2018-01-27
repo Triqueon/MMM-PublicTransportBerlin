@@ -1,5 +1,5 @@
 "use strict";
-const saarvvClient = require('saarvv-client');
+const saarvvClient = require('hafas-client');
 
 let SaarvvFetcher = function (config) {
     this.config = config;
