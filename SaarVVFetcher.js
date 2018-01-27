@@ -1,21 +1,21 @@
 "use strict";
-const vbbClient = require('vbb-client');
+const saarvvClient = require('saarvv-client');
 
-let VbbFetcher = function (config) {
+let SaarvvFetcher = function (config) {
     this.config = config;
 };
 
-VbbFetcher.prototype.getStationId = function () {
+SaarvvFetcher.prototype.getStationId = function () {
     return this.config.stationId;
 };
 
-VbbFetcher.prototype.getStationName = function () {
-    return vbbClient.station(this.config.stationId).then((response) => {
+SaarvvFetcher.prototype.getStationName = function () {
+    return saarvvClient.station(this.config.stationId).then((response) => {
         return response.name;
     });
 };
 
-VbbFetcher.prototype.fetchDepartures = function () {
+SaarvvFetcher.prototype.fetchDepartures = function () {
 
     // when value for a request is calculated to be 5 minutes before delay time
     // so we can also show the non-reachable departures in the module
@@ -48,7 +48,7 @@ VbbFetcher.prototype.fetchDepartures = function () {
     // For use in testing environments:
     // opt.identifier = "Testing - MagicMirror module MMM-PublicTransportBerlin";    // send testing identifier
 
-    return vbbClient.departures(this.config.stationId, opt)
+    return saarvvClient.departures(this.config.stationId, opt)
         .then((response) => {
             return this.processData(response);
         }).catch((e) => {
@@ -56,7 +56,7 @@ VbbFetcher.prototype.fetchDepartures = function () {
         });
 };
 
-VbbFetcher.prototype.processData = function (data) {
+SaarvvFetcher.prototype.processData = function (data) {
 
     let departuresData = {
         stationId: this.config.stationId,
@@ -121,4 +121,4 @@ function printDeparture(row) {
     console.log(time + " " + delayMinutes + " " + row.product.type.unicode + " " + row.direction + " | stationId: " + row.station.id);
 }
 
-module.exports = VbbFetcher;
+module.exports = SaarvvFetcher;

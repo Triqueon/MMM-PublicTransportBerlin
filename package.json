@@ -1,35 +1,34 @@
 {
-  "name": "MMM-PublicTransportBerlin",
+  "name": "MMM-PublicTransportSaarVV",
   "version": "0.3.0",
   "description": "VBB-Hafas driven public transport module for MagicMirror 2.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deg0nz/MMM-PublicTransportBerlin"
+    "url": "git+https://github.com/triqueon/MMM-PublicTransportSaarVV"
   },
   "keywords": [
     "magic mirror",
     "magic mirror 2",
     "smart mirror",
     "public transport",
-    "public transport berlin",
+    "public transport SaarVV",
     "public transport brandenburg",
     "module"
   ],
   "author": {
-    "name": "deg0nz",
-    "email": "b@kayuk.de",
-    "url": "https://kayuk.de"
+    "name": "Triqueon",
+    "email": "pascal.stein@gmail.com",
   },
-  "contributors": "https://github.com/deg0nz/MMM-PublicTransportBerlin/graphs/contributors",
+  "contributors": "https://github.com/triqueon/MMM-PublicTransportSaarVV/graphs/contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deg0nz/MMM-PublicTransportBerlin/issues"
+    "url": "https://github.com/triqueon/MMM-PublicTransportSaarVV/issues"
   },
-  "homepage": "https://github.com/deg0nz/MMM-PublicTransportBerlin",
+  "homepage": "https://github.com/triqueon/MMM-PublicTransportSaarVV",
   "engines": {
     "node": ">=6"
   },
   "dependencies": {
-    "vbb-client": "^2.0.1"
+    "hafas-client": "^2.3.0"
   }
 }
