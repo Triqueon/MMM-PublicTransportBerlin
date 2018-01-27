@@ -1,10 +1,10 @@
 "use strict";
 
-Module.register("MMM-PublicTransportBerlin", {
+Module.register("MMM-PublicTransportSaarVV", {
 
     // default values
     defaults: {
-        name: "MMM-PublicTransportBerlin",
+        name: "MMM-PublicTransportSaarVV",
         hidden: false,
         stationId: 900000160003,
      //   directionStationId: 0,             // The stationId of the next station in which direction departures should be shown
